@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> </title>
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css"><!-- on importe le fichier font-awesome.min.css pour declarer des icones !-->
+	<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap/css/bootstrap.min.css"> <!-- on importe le fichier bootstrap.min.css ui va nous permetre de deviser notre page html en tableau de bloc  pour faciliter la tache !-->
+	<style>
+	.class1{
+		color: white;
+		font-size: 25px;
+	}
+	.navClass{
+		background-color: black;
+
+	}
+	section{
+
+
+		margin-top: -20px;
+	}
+	.formation{
+		background-image: url('index3.jpg');/* on met cette image comme un font pour notre division*/
+		background-attachment: fixed;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		opacity: 0.9;
+		position: relative;
+		margin-top: -20px;
+
+
+	}
+	.forma{
+		font-size: 90px;
+		text-align: center;
+		color: white;
+
+	}
+	.txtExprience{
+		font-size: 45px;
+		text-align: center;
+		color: black;
+
+	}
+	.champDeformation{
+		font-size: 30px;
+		color: rgb(0,64,64);
+		text-align: center;
+	}
+	.champDeformationAnn{
+		font-size: 30px;
+		color: rgb(0,128,128);
+		text-align: center;
+	}
+
+	.langues, .contacText{
+		text-align: center;
+		font-size: 45px;
+
+	}
+	.champFormaData{
+		text-align: center;
+		font-size: 19px
+	}
+	.champLangues{
+		text-align: center;
+		font-size: 19px;
+
+	}
+	.labell{
+		text-align: center;
+		font-size: 15px;
+
+	}
+	.bouton{
+		text-align: center;
+	}
+	.timeline ul li{
+		list-style-type: none;/* pour enlever le type pour la liste */
+		position: relative;/* pour ue notre division timeline ne va pas avoir une position fix dans la page html*/
+		width: 10px;/* chaue elemeent de la liste va avoir une largeur de 10px*/
+		margin:0 auto;
+		padding-top: 50px;
+		background: rgb(69,69,90);;
+		color:white;
+	}
+	.timeline ul li::after{/* on insere apres le contenu de li ce style*/
+		content: '';
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translateX(-50%);/* a le role de margin*/
+		width: 50px;/* ta taille du cercle*/
+		height: 50px;
+		border-radius: 50%;/* le inhina'e pour avoir un cercle*/
+		background: inherit;
+
+		margin-bottom: 50px;
+
+
+	}
+	.timeline ul li:nth-child(even) div{
+		left:-520px;
+
+	}
+	.timeline ul li:nth-child(odd) div{
+		left:30px;
+	}
+		/*.experience{
+			background-color: rgb(69,69,90);
+			}*/
+			.divElementList{
+				position:relative;
+				background-color: rgb(69,69,90);
+				width: 500px;
+				padding-left: 15px;
+			}
+			.infoPersonnelle{
+				position: relative;
+				padding-left: 1000px;
+				margin-top: -300px;
+				margin-bottom: 290px;/* pour avoir un espace entre cet element html ui est un paragrahe et l'element suivant*/
+				color: white;
+				font-size: 13px ;
+				/*font-family: 'Pacifico', cursive;*/
+				font-family: 'Gloria Hallelujah', cursive;
+			}
+			.experience{
+				position: relative;
+				margin-bottom: 160px;
+			}
+			.contact{
+				margin-left: 60px;
+
+
+			}
+			.contactForm{
+
+			}
+
+
+			</style>
+			<link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Gloria+Hallelujah|Pacifico" rel="stylesheet">
+		</head>
+		<body>
+
+
+			<nav class="navbar  navClass navbar-fixed-top" > <!--  navbar-primary  or default on va avoir une barre de navigation par defaut de bootstrap--!--> 
+				<div class="container-fluid">
+					<div class="navbar-header">
+
+						<ul class="nav navbar-nav" >
+                         <li>  <a href="#" class ="class1"> <img src="logo2.png" width="75px"></a></li>
+							<li class="active"><a href="#" class ="class1">Accueil</a></li>
+							<li><a href="#" class ="class1">Formation</a></li>
+							<li ><a href="#" class ="class1">Experience</a></li>
+							<li><a href="#" class ="class1">Langues</a></li>
+
+
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<section class ="content">
+				<div class="row">
+
+					<video autoplay loop>
+
+						<source src="cv.mp4" type="video/mp4"/>votre navigateur ne supporte pas cette vidéo
+
+					</video>
+					<p class="infoPersonnelle"> Radja Ourida(Melina) </p>
+
+				</div>
+				<div class="row formation">
+
+
+
+					<div class="col-md-12 forma">
+						<p> Formation </p>
+					</div>
+					<div class="col-md-4">
+						<p class="champDeformation">  Diplome </p>
+					</div>
+					<div class="col-md-4 ">
+						<p class="champDeformationAnn">  Année d'obtention </p>
+					</div>
+					<div class="col-md-4 ">
+						<p class="champDeformation">  la mension </p>
+					</div>
+					<div class="col-md-4">
+						<p class="champFormaData"> Bacalauréat </p>
+					</div>
+					<div class="col-md-4">
+						<p class="champFormaData"> 2014 </p>
+					</div>
+					<div class="col-md-4">
+						<p class="champFormaData"> trés bien (16/20) </p>
+					</div>
+				</div>
+
+				<div class="row ">
+					<div class="col-md-12  col-sm-6 col-lg-12 langues">
+						<p>Langues <p>
+						</div>
+
+						<div class="col-md-3 champLangues">
+
+							<p> Arabe</p>
+							<div class="col-md-10">
+
+								<div class="progress">
+									<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+									area-valuemax="100" style="width:70%;">70% 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 champLangues">
+
+						<p> Français</p>
+						<div class="col-md-10">
+							<div class="progress">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+								area-valuemax="100" style="width:70%;">70% 
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 champLangues">
+
+					<p> Anglais</p>
+					<div class="col-md-10">
+						<div class="progress">
+							<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+							area-valuemax="100" style="width:80%;">80% 
+						</div>
+					</div>
+				</div>
+			</div> 
+
+			<div class="col-md-3  champLangues"> <!-- de toute la ligne de la page thml on a pris 3 colones !-->
+				<p> Thamazigheth  </p>
+				<div class="col-md-10"> <!-- on a devisé les trois colones(thamazighth) en 12 colones et on a pris 10!-->
+					<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+						area-valuemax="100" style="width:100%;">100% 
+					</div>
+				</div>
+
+
+			</div>
+
+		</div>
+
+		<div class="experience">
+			<div class="timeline">
+
+				<p class="txtExprience"> Experiences </p>
+
+				<ul >
+					<li>
+						<div class="divElementList">
+							<time> juin 2015</time>
+							<h1> stage decouvert chez BIMOU</h1>
+							j'ai fait un stage decouvert au sein de l'entreprise bimou 
+						</div>
+					</li>
+					<li > 
+						<div class="divElementList">
+							<time> juin 2016</time>
+							<h1> stage  chez MIRA</h1>
+							j'ai fait un stage  au sein de l'entreprise MIRA à  babAhcen  j'ai devloppeé une application java 
+						</div>
+					</li>
+					<li> 
+						<div class="divElementList">
+							<time> Avril 2016</time>
+							<h1> projet pludiciplinaire al'esi </h1>
+							on a devloppé en euipe une application desktop
+						</div> 
+					</li>
+
+
+
+				</ul>
+			</div>
+		</div>
+
+		<div class="row ">
+			<div class="col-md-12 contacText">
+				<p > Contact</p>
+
+			</div>	
+
+			<div class="col-md-2"></div>
+			<div class="col-md-6 contactForm">
+				<form>
+					<div class="form-group"><!-- il s'agit d'un form de bootstrap-->
+						<label for="exampleInputName">NOM*</label><!--exampleInputEmail1 pour ue bootstrap lui affect son style-->
+						<input type="text" class="form-control" id="exampleInputName" placeholder="Nom"><!-- le text a afficher en attendant ue le user tape ses donner rien      avoir avec bootsrap-->
+					</div>
+					<div class="form-group">
+						<label for="exampleInputName2">PRENOM*</label>
+						<input type="text" class="form-control" id="exampleInputName2" placeholder="Prenom">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputAdresse">Email</label>
+						<input type="text" class="form-control" id="exampleInputAdresse" placeholder="@Email">
+					</div>
+					<div>
+						<button type="submit" class="btn btn-default">Valider</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+	<div class="row  contact">
+
+		<div class="col-md-3 ">
+
+			<i class="fa fa-2x fa-facebook" >acebook thifAgur Melly</i>
+		</div>
+		<div class="col-md-3">
+
+			<i class="fa fa-2x fa-twitter" > twitter</i>
+		</div>
+		<div class="col-md-3">
+
+			<i class="fa fa-2x fa-linkedin" > linkedin</i>
+
+		</div>
+
+	</section>
+
+	<!--<span class="sr-only">(current)</span><!-->
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
